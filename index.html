@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background-container"></div>
+
+      <div class="card-front-group">
+        <img class="card-front" src="images/bg-card-front.png" />
+        <img class="card-logo" src="images/card-logo.svg" />
+        <div class="card-number">0000 0000 0000 0000</div>
+        <div class="card-name">Jane Appleseed</div>
+        <div class="card-date">00/00</div>
+      </div>
+
+      <div class="card-back-group">
+        <img class="card-back" src="images/bg-card-back.png" />
+        <div class="card-cvc">000</div>
+      </div>
+
+      <div class="form-container">
+        <form class="form">
+          <p>CARDHOLDER NAME</p>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="e.g. Jane Appleseed"
+            required
+          />
+          <p class="warning warning-name">Wrong format, letters only</p>
+
+          <p>CARD NUMBER</p>
+          <input
+            type="text"
+            id="number"
+            name="number"
+            placeholder="e.g. 1234 5678 9123 0000"
+            maxlength="19"
+            required
+          />
+          <p class="warning warning-number">Wrong format, numbers only</p>
+
+          <div class="form-group">
+            <div class="date-group">
+              <p>EXP. DATE (MM/YY)</p>
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="month"
+                  name="month"
+                  placeholder="MM"
+                  maxlength="2"
+                  required
+                />
+                <input
+                  type="text"
+                  id="year"
+                  name="year"
+                  placeholder="YY"
+                  maxlength="2"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="cvc-group">
+              <p>CVC</p>
+              <input
+                type="text"
+                id="cvc"
+                name="cvc"
+                placeholder="e.g. 123"
+                maxlength="3"
+                required
+              />
+            </div>
+          </div>
+          <p class="warning warning-month">Wrong month format</p>
+          <p class="warning warning-year">Wrong year format</p>
+          <p class="warning warning-cvc">Wrong CVC format</p>
+
+          <button type="submit" class="confirm">Confirm</button>
+        </form>
+
+        <div class="complete">
+          <img src="images/icon-complete.svg" />
+          <h2>THANK YOU!</h2>
+          <p>We've added your card details</p>
+          <button class="continue">Continue</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thank you! We've added your card details Continue -->
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
