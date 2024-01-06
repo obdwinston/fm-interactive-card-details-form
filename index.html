@@ -15,6 +15,8 @@
     <title>Frontend Mentor | Interactive card details form</title>
 
     <link rel="stylesheet" href="styles.css" />
+    <script src="anime.min.js" defer></script>
+    <script src="scripts.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -35,26 +37,30 @@
 
       <div class="form-container">
         <form class="form">
-          <p>CARDHOLDER NAME</p>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="e.g. Jane Appleseed"
-            required
-          />
-          <p class="warning warning-name">Wrong format, letters only</p>
+          <div class="name-group">
+            <p>CARDHOLDER NAME</p>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="e.g. Jane Appleseed"
+              required
+            />
+            <p class="warning warning-name">Wrong format, letters only</p>
+          </div>
 
-          <p>CARD NUMBER</p>
-          <input
-            type="text"
-            id="number"
-            name="number"
-            placeholder="e.g. 1234 5678 9123 0000"
-            maxlength="19"
-            required
-          />
-          <p class="warning warning-number">Wrong format, numbers only</p>
+          <div class="number-group">
+            <p>CARD NUMBER</p>
+            <input
+              type="text"
+              id="number"
+              name="number"
+              placeholder="e.g. 1234 5678 9123 0000"
+              maxlength="19"
+              required
+            />
+            <p class="warning warning-number">Wrong format, numbers only</p>
+          </div>
 
           <div class="form-group">
             <div class="date-group">
@@ -106,9 +112,5 @@
         </div>
       </div>
     </div>
-
-    <!-- Thank you! We've added your card details Continue -->
-
-    <script src="scripts.js"></script>
   </body>
 </html>

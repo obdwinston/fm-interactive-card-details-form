@@ -142,3 +142,57 @@ function isNumeric(inputValue, inputLength) {
     return true;
   return false;
 }
+
+// ANIMATIONS
+
+anime({
+  targets: ".card-front-group",
+  opacity: [0, 1],
+  translateY: [-15, 0],
+  duration: 500,
+  easing: "easeInOutQuad",
+});
+
+anime({
+  targets: ".card-back-group",
+  opacity: [0, 1],
+  translateY: [15, 0],
+  duration: 500,
+  easing: "easeInOutQuad",
+});
+
+anime({
+  targets: ".name-group",
+  opacity: [0, 1],
+  translateY: [-15, 0],
+  duration: 500,
+  delay: 100,
+  easing: "easeInOutQuad",
+});
+
+anime({
+  targets: ".number-group",
+  opacity: [0, 1],
+  translateY: [-15, 0],
+  duration: 500,
+  delay: 300,
+  easing: "easeInOutQuad",
+});
+
+anime({
+  targets: ".form-group",
+  opacity: [0, 1],
+  translateY: [-15, 0],
+  duration: 500,
+  delay: 500,
+  easing: "easeInOutQuad",
+});
+
+anime({
+  targets: ".confirm",
+  opacity: [0, 1],
+  translateY: [-15, 0],
+  duration: 500,
+  delay: 700,
+  easing: "easeInOutQuad",
+});
